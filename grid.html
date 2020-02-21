@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>grid</title>
+<style>
+.grid
+{
+display:grid;
+grid-template-rows:repeat(6,1fr);
+grid-template-columns:repeat(12,1fr)
+grid-gap:10px;
+}
+.box
+{
+color:red;
+font-size:20px;
+padding:20px;
+background-color:yellow;
+text-align:center;
+border:5px solid white;
+border-left-color:red;
+border-top-color:red;
+border-right-color:red;
+border-bottom-color:red;
+margin:10px;
+}
+.box:nth-child(1)
+{
+grid-column:span 12;
+}
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4)
+{
+grid-column:span 4;
+}
+</style>
+<body class="grid">
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+<div class="box">4</div>
+</body>
+</html>

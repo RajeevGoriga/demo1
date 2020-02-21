@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=""UTF-8>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>form validation</title>
+<link href="raj.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>REGISTRATION</h1>
+<form name="registration" class="registration" onsubmit="return formValidation()">
+<ul>
+<li><label>USER NAME:</label></li>
+<input type="text" placeholder="username" size="25">
+<li><label>PASSWORD:</label></li>
+<input type="password" placeholder="password" size="25">
+<li><label>ADDRESS :</label></li>
+<input type="text" placeholder="address" size="50">
+<li><label>COUNTRY:</label></li>
+<select value="default">
+<option value="IN">INDIA</option>
+<option value="J">JAPAN</option>
+<option value="BAN">BANGLADESH</option>
+<option value="SRI">SRILANKA</option>
+</select>
+<li><label>GENDER:</label></li>
+<input type="radio" name="gender" value="male">MALE
+<input type="radio" name="gender" value="female">FEMALE
+<input type="radio" name="gender" value="others">OTHERS
+<li><label>LANGUAGE:</label></li>
+<input type="checkbox" name="language" value="english">ENGLISH
+<input type="checkbox" name="language" value="hindi">HINDI
+<input type="checkbox" name="language" value="telugu">TELUGU
+</ul>
+
+</form>
+</body>
+</html>
